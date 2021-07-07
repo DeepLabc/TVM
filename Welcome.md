@@ -10,6 +10,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 - 重装torch,reboot(OK) 
 
 没有对pytorch模型进行转换，因为TVM支持直接编译pytorch模型，结果：
+
 (1):单张图片在GPU的推理时间：33.50ms
 (2):600张图片在GPU的平均推理时间：12.60ms
 (3):TVM编译pytorch模型之后，推理测试600张的图片的平均时间：14.99ms (std: 0.47ms)
@@ -160,7 +161,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NTA2OTg2MywtMTIwMTEyNjYxNCwtMT
-Q1MTE0MTU2OCwxNjIxMDcxOTg1LC0xNzg0MjQ3ODc4LC0zMzI0
-NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTEzNDU5MDg5MSwxOTk1MDY5ODYzLC0xMj
+AxMTI2NjE0LC0xNDUxMTQxNTY4LDE2MjEwNzE5ODUsLTE3ODQy
+NDc4NzgsLTMzMjQ1NTM2M119
 -->
