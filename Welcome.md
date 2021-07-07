@@ -21,7 +21,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 结果：
 TVM编译调优的pytorch模型之后，推理测试600张的图片的平均时间：6.16ms (std: 0.30 ms)
 优化VS不优化：Gain = 14.99ms - 6.16ms = 8.83ms
-优化VS pytorch: Gain = 12.60ms - 6.16ms = 5.9
+优化VS pytorch: Gain = 12.60ms - 6.16ms = 5.94ms
+
 
 
 
@@ -160,7 +161,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDc5ODMyNDksLTEyMDExMjY2MTQsLT
+eyJoaXN0b3J5IjpbLTE1MDE1NzY4NjksLTEyMDExMjY2MTQsLT
 E0NTExNDE1NjgsMTYyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMzMy
 NDU1MzYzXX0=
 -->
