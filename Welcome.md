@@ -16,7 +16,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 可以发现，这个时候没有对模型进行优化，推理时间是比原始的pytorch模型是更久的。
 
 ## autoTVM
-
+使用TVM自带的自动调优的包来进行优化
 
 
 
@@ -156,7 +156,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyMDEwMTIyLC0xMjAxMTI2NjE0LC0xND
-UxMTQxNTY4LDE2MjEwNzE5ODUsLTE3ODQyNDc4NzgsLTMzMjQ1
-NTM2M119
+eyJoaXN0b3J5IjpbLTE5ODA1Nzg4MzAsLTEyMDExMjY2MTQsLT
+E0NTExNDE1NjgsMTYyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMzMy
+NDU1MzYzXX0=
 -->
