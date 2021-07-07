@@ -16,7 +16,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 可以发现，这个时候没有对模型进行优化，推理时间是比原始的pytorch模型是更久的。
 
 ## autoTVM
-使用TVM自带的自动调优的包来进行优化，关键函数：autotvm.apply_history_best()
+使用TVM自带的自动调优的包来进行优化，关键函数：autotvm.apply_history_best()。.log包括一些优化的配置，但是还没看明白做了哪些优化
 然后进行重新编译，依然使用PassContext()的三级优化来编译：
 结果：
 TVM编译调优的pytorch模型之后，推理测试600张的图片的平均时间：6.16ms (std: 0.30 ms)
@@ -161,7 +161,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDE1NzY4NjksLTEyMDExMjY2MTQsLT
-E0NTExNDE1NjgsMTYyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMzMy
-NDU1MzYzXX0=
+eyJoaXN0b3J5IjpbNzIyNTExNDIzLC0xMjAxMTI2NjE0LC0xND
+UxMTQxNTY4LDE2MjEwNzE5ODUsLTE3ODQyNDc4NzgsLTMzMjQ1
+NTM2M119
 -->
