@@ -17,8 +17,9 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 ## autoTVM
 使用TVM自带的自动调优的包来进行优化，关键函数：autotvm.apply_history_best()
-然后进行重新编译，依然使用PassContext()
-
+然后进行重新编译，依然使用PassContext()的三级优化来编译：
+结果：
+TVM编译调优的pytorch模型之后，推理测试600张的图片的平均时间：6.16ms (std: 0.30)
 
 
 
@@ -157,7 +158,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTI2MDYyNSwtMTIwMTEyNjYxNCwtMT
+eyJoaXN0b3J5IjpbLTc4Nzk0MjU4OCwtMTIwMTEyNjYxNCwtMT
 Q1MTE0MTU2OCwxNjIxMDcxOTg1LC0xNzg0MjQ3ODc4LC0zMzI0
 NTUzNjNdfQ==
 -->
