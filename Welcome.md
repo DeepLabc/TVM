@@ -10,9 +10,10 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 - export CUDA_VISIBLE_DEVICES = 0 (无效)
 - 重装torch,reboot(OK) 
 
-结果：
+没有对pytorch模型进行转换，因为TVM支持直接编译pytorch模型，结果：
 (1):单张图片在GPU的推理时间：33.5ms
-(2):600张图片在GPU的平均推理时间：
+(2):600张图片在GPU的平均推理时间：12.6ms
+
 
 
 
@@ -152,6 +153,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMjU0MDEzMywtMTQ1MTE0MTU2OCwxNj
-IxMDcxOTg1LC0xNzg0MjQ3ODc4LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTE5MDU2NTA0NDEsLTE0NTExNDE1NjgsMT
+YyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMzMyNDU1MzYzXX0=
 -->
