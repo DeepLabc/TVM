@@ -11,7 +11,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 - 重装torch,reboot(OK) 
 
 结果：
-(1):
+(1):单张图片在GPU的推理时间：33.5ms
+(2):600张图片在GPU的平均推理时间：
 
 
 
@@ -151,6 +152,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MjYxMzk0LC0xNDUxMTQxNTY4LDE2Mj
-EwNzE5ODUsLTE3ODQyNDc4NzgsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTUwMjU0MDEzMywtMTQ1MTE0MTU2OCwxNj
+IxMDcxOTg1LC0xNzg0MjQ3ODc4LC0zMzI0NTUzNjNdfQ==
 -->
