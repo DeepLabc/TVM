@@ -10,7 +10,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 - 重装torch,reboot(OK) 
 
 结果：
-(1):直接cpu测试的结果
+(1):
 
 
 
@@ -150,6 +150,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODg4MTQwLDE2MjEwNzE5ODUsLTE3OD
-QyNDc4NzgsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTE0NTExNDE1NjgsMTYyMTA3MTk4NSwtMT
+c4NDI0Nzg3OCwtMzMyNDU1MzYzXX0=
 -->
