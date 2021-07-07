@@ -2,7 +2,10 @@
 # 7.7
 在运行代码的时候，突然报错：
 CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:115.)
-****
+**解决办法**
+- export CUDA_VISIBLE_DEVICES = 0 (无效)
+- 重装torch
+
 
 
 # Files
@@ -144,6 +147,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MDQyNDM0NiwtMTc4NDI0Nzg3OCwtMz
-MyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbNzI1MjQwMjYzLC0xNzg0MjQ3ODc4LC0zMz
+I0NTUzNjNdfQ==
 -->
