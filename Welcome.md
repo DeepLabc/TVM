@@ -23,8 +23,9 @@ TVM编译调优的pytorch模型之后，推理测试600张的图片的平均时�
 优化VS不优化：Gain = 14.99ms - 6.16ms = 8.83ms
 优化VS pytorch: Gain = 12.60ms - 6.16ms = 5.94ms
 
--基本解决了上一周的两个疑惑，直接使用一张图片来测试推理时间，前后会有一些波动，单张33.5ms vs 平均12.60ms
--
+**小结**
+- 基本解决了上一周的两个疑惑，直接使用一张图片来测试推理时间，前后会有一些波动，单张33.5ms vs 平均12.60ms
+-两次的不经过优化的模型直接用TVM编译并没有加速的效果，反而会提升，()
 
 
 ## Create files and folders
@@ -162,7 +163,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mzk2NDI4OTUsLTEyMDExMjY2MTQsLT
-E0NTExNDE1NjgsMTYyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMzMy
-NDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTQzNDEwMzE2MiwtMTIwMTEyNjYxNCwtMT
+Q1MTE0MTU2OCwxNjIxMDcxOTg1LC0xNzg0MjQ3ODc4LC0zMzI0
+NTUzNjNdfQ==
 -->
