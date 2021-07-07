@@ -5,7 +5,6 @@
 
 在运行代码的时候，突然报错：
 CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. 
-(Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:115.)
 解决办法
 - export CUDA_VISIBLE_DEVICES = 0 (无效)
 - 重装torch,reboot(OK) 
@@ -13,6 +12,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 没有对pytorch模型进行转换，因为TVM支持直接编译pytorch模型，结果：
 (1):单张图片在GPU的推理时间：33.5ms
 (2):600张图片在GPU的平均推理时间：12.6ms
+(3):模型经过
 
 
 
@@ -153,6 +153,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDU2NTA0NDEsLTE0NTExNDE1NjgsMT
+eyJoaXN0b3J5IjpbLTE2NjI1MDg3ODYsLTE0NTExNDE1NjgsMT
 YyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMzMyNDU1MzYzXX0=
 -->
