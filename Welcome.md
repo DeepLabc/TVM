@@ -8,9 +8,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 - 重装torch,reboot(OK) 
 
 
-# Files
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
 ## Create files and folders
 
@@ -147,6 +145,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMz
-MyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbMTQ4MTYxMjU5NiwxNjIxMDcxOTg1LC0xNz
+g0MjQ3ODc4LC0zMzI0NTUzNjNdfQ==
 -->
