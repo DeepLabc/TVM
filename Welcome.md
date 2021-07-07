@@ -10,6 +10,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 
 
+
+
 ## Create files and folders
 
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
@@ -145,6 +147,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTYxMjU5NiwxNjIxMDcxOTg1LC0xNz
-g0MjQ3ODc4LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTc4Mzk1NDgwLDE2MjEwNzE5ODUsLTE3OD
+QyNDc4NzgsLTMzMjQ1NTM2M119
 -->
