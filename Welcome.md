@@ -9,7 +9,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 - export CUDA_VISIBLE_DEVICES = 0 (无效)
 - 重装torch,reboot(OK) 
 
-
+结果：
+(1):直接cpu测试的结果
 
 
 
@@ -149,6 +150,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzcxMzYzMywxNjIxMDcxOTg1LC0xNz
-g0MjQ3ODc4LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTg5ODg4MTQwLDE2MjEwNzE5ODUsLTE3OD
+QyNDc4NzgsLTMzMjQ1NTM2M119
 -->
