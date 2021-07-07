@@ -1,6 +1,8 @@
 # Get start with TVM-1
 # 7.7
 
+跟着这里的教程跑了一遍：https://github.com/leoluopy/autotvm_tutorial
+
 在运行代码的时候，突然报错：
 CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:115.)
 解决办法
@@ -147,6 +149,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4Mzk1NDgwLDE2MjEwNzE5ODUsLTE3OD
-QyNDc4NzgsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTM1NzcxMzYzMywxNjIxMDcxOTg1LC0xNz
+g0MjQ3ODc4LC0zMzI0NTUzNjNdfQ==
 -->
