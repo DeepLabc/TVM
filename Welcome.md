@@ -27,7 +27,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 优化VS pytorch: Gain = 12.60ms - 6.16ms = 5.94ms
 
-**小结**
+## 小结
 - 基本解决了上一周的两个疑惑，直接使用一张图片来测试推理时间，前后会有一些波动，单张33.5ms vs 平均12.60ms
 - 两次的实验MobileNetv2、CenterFace(上周GitHub的blog也说明了这个问题)验证了不经过优化的模型直接用TVM编译并没有加速的效果，反而时间变长了，因此在后期的模型优化过程，需要自动调优或者手动调优才能实现加速。
 
@@ -164,7 +164,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDc5NzU1NzksMTk5NTA2OTg2MywtMT
-IwMTEyNjYxNCwtMTQ1MTE0MTU2OCwxNjIxMDcxOTg1LC0xNzg0
-MjQ3ODc4LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbOTYxMzI2MTIxLDE5OTUwNjk4NjMsLTEyMD
+ExMjY2MTQsLTE0NTExNDE1NjgsMTYyMTA3MTk4NSwtMTc4NDI0
+Nzg3OCwtMzMyNDU1MzYzXX0=
 -->
