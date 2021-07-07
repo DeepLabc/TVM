@@ -1,5 +1,5 @@
 # Get start with TVM-1
-# 7.7
+# 2021.7.7
 ## model without tuning
 跟着这里的教程跑了一遍：https://github.com/leoluopy/autotvm_tutorial
 
@@ -25,12 +25,9 @@ TVM编译调优的pytorch模型之后，推理测试600张的图片的平均时�
 
 **小结**
 - 基本解决了上一周的两个疑惑，直接使用一张图片来测试推理时间，前后会有一些波动，单张33.5ms vs 平均12.60ms
--两次的实验MobileNetv2、CenterFace(上周GitHub的blog也说明了这个问题)验证了不经过优化的模型直接用TVM编译并没有加速的效果，反而时间变长了，因此在后期的模型优化过程，需要自动调优或者手动调优才能实现加速。
+- 两次的实验MobileNetv2、CenterFace(上周GitHub的blog也说明了这个问题)验证了不经过优化的模型直接用TVM编译并没有加速的效果，反而时间变长了，因此在后期的模型优化过程，需要自动调优或者手动调优才能实现加速。
 
-
-## Create files and folders
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+# 2021.7.8
 
 ## Switch to another file
 
@@ -163,7 +160,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTA3MTE2MSwtMTIwMTEyNjYxNCwtMT
+eyJoaXN0b3J5IjpbMTk5NTA2OTg2MywtMTIwMTEyNjYxNCwtMT
 Q1MTE0MTU2OCwxNjIxMDcxOTg1LC0xNzg0MjQ3ODc4LC0zMzI0
 NTUzNjNdfQ==
 -->
