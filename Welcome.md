@@ -1,6 +1,6 @@
 # Get start with TVM-1
 # 7.7
-
+## model without tuning
 跟着这里的教程跑了一遍：https://github.com/leoluopy/autotvm_tutorial
 
 在运行代码的时候，突然报错：
@@ -14,6 +14,9 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 (2):600张图片在GPU的平均推理时间：12.6ms
 (3):TVM编译pytorch模型之后，推理测试600张的图片的平均时间：14.99ms (std: 0.47ms)
 可以发现，这个时候没有对模型进行优化，推理时间是比原始的pytorch模型是更久的。
+
+## autoTVM
+
 
 
 
@@ -153,6 +156,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDExMjY2MTQsLTE0NTExNDE1NjgsMT
-YyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbODUyMDEwMTIyLC0xMjAxMTI2NjE0LC0xND
+UxMTQxNTY4LDE2MjEwNzE5ODUsLTE3ODQyNDc4NzgsLTMzMjQ1
+NTM2M119
 -->
