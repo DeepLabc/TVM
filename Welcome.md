@@ -10,7 +10,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 - 重装torch,reboot(OK) 
 
 没有对pytorch模型进行转换，因为TVM支持直接编译pytorch模型，结果：
-(1):单张图片在GPU的推理时间：33.5ms
+(1):单张图片在GPU的推理时间：33.50ms
 (2):600张图片在GPU的平均推理时间：12.60ms
 (3):TVM编译pytorch模型之后，推理测试600张的图片的平均时间：14.99ms (std: 0.47ms)
 可以发现，这个时候没有对模型进行优化，推理时间是比原始的pytorch模型是更久的。
@@ -23,7 +23,8 @@ TVM编译调优的pytorch模型之后，推理测试600张的图片的平均时�
 优化VS不优化：Gain = 14.99ms - 6.16ms = 8.83ms
 优化VS pytorch: Gain = 12.60ms - 6.16ms = 5.94ms
 
-**结论：**基本解决了上一周的两个疑惑，直接使用一张图片来测试推理时间，前后会有一些波动，单张3.5
+-基本解决了上一周的两个疑惑，直接使用一张图片来测试推理时间，前后会有一些波动，单张33.5ms vs 平均12.60ms
+-
 
 
 ## Create files and folders
@@ -161,7 +162,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1ODQzMzQzLC0xMjAxMTI2NjE0LC0xND
-UxMTQxNTY4LDE2MjEwNzE5ODUsLTE3ODQyNDc4NzgsLTMzMjQ1
-NTM2M119
+eyJoaXN0b3J5IjpbLTE4Mzk2NDI4OTUsLTEyMDExMjY2MTQsLT
+E0NTExNDE1NjgsMTYyMTA3MTk4NSwtMTc4NDI0Nzg3OCwtMzMy
+NDU1MzYzXX0=
 -->
