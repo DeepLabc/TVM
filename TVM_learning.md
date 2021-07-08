@@ -14,7 +14,7 @@
 
    为了探索(4)的问题，根据官网的文档，目前在用TVM的Autotune做一个自动优化，现在只针对2D_Conv这个Op,过程非常慢，目前还没搞定
  
-慢的原因：
+调查慢的原因：
 AutoTVM模块通过搜索的方式获得具体硬件下的最优调度配置，总体步骤如：
 
 -   针对每个Relay子函数，定义一系列调度原语（Schedule primitives），通过调度原语的组合实现计算结果等价的Relay子函数
@@ -76,7 +76,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NTIyMjQ0Niw1MDgxNTgxOTIsMTk5MT
-I4ODM4LC0xNTYxOTgwMjgyLC0zMzM5MDY4MjcsLTI3NTYyNzQ0
-OSw5NjEzMjYxMjFdfQ==
+eyJoaXN0b3J5IjpbLTEwMTQ5MTQ0ODAsLTU3NTIyMjQ0Niw1MD
+gxNTgxOTIsMTk5MTI4ODM4LC0xNTYxOTgwMjgyLC0zMzM5MDY4
+MjcsLTI3NTYyNzQ0OSw5NjEzMjYxMjFdfQ==
 -->
