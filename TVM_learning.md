@@ -40,7 +40,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 模型：
 接口：mod  =  relay.quantize.quantize(mod, params)
 最新的0.8版本官方文档没有找到这个接口......但是依然可以用......
-
+|    方法        |
 
 
 
@@ -94,6 +94,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwMDQ2MTI1LC0zMzM5MDY4MjcsLTI3NT
-YyNzQ0OSw5NjEzMjYxMjFdfQ==
+eyJoaXN0b3J5IjpbLTg1MTYzODAzOSwtMzMzOTA2ODI3LC0yNz
+U2Mjc0NDksOTYxMzI2MTIxXX0=
 -->
