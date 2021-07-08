@@ -72,13 +72,13 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 模型：
 接口：mod  =  relay.quantize.quantize(mod, params)
 最新的0.8版本官方文档没有找到这个接口....
-考虑用pytorh 的量化包来实现，官方文档说目前还不支持用cuda
+考虑用pytorh 的量化包来实现，官方文档说目前还不支持用cuda做量化，所以思路：pytorch module---->cpu quantization ------->gpu----->TVM + gpu  ------->autoT
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMTA2MDg2NSw0NDA0ODc0MTAsLTE2OD
-QwNzc5NDgsLTEwMTQ5MTQ0ODAsLTU3NTIyMjQ0Niw1MDgxNTgx
-OTIsMTk5MTI4ODM4LC0xNTYxOTgwMjgyLC0zMzM5MDY4MjcsLT
-I3NTYyNzQ0OSw5NjEzMjYxMjFdfQ==
+eyJoaXN0b3J5IjpbMjc1MTg0NzMxLDQ0MDQ4NzQxMCwtMTY4ND
+A3Nzk0OCwtMTAxNDkxNDQ4MCwtNTc1MjIyNDQ2LDUwODE1ODE5
+MiwxOTkxMjg4MzgsLTE1NjE5ODAyODIsLTMzMzkwNjgyNywtMj
+c1NjI3NDQ5LDk2MTMyNjEyMV19
 -->
