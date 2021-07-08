@@ -11,9 +11,8 @@
 
    (4):针对这个问题，查找了一些资料，一个较大的可能是没有针对GPU做任何优化，导致直接编译后的模型推理效率很低，GitHub上发现别人做的实验也有类似情况，直接部署到Jetson Nano从CPU到GPU的时间变化为160ms-->1.8s.(https://mp.weixin.qq.com/s/7Wvv4VOPdj6N_CEg8bJFXw)
 
-7.3-7.6:
 
-   为了探索(4)的问题，根据官网的文档，目前在用TVM的Autotune做一个自动优化，现在只针对2D_Conv这个Op,过程非常慢，目前还没搞定
+(5):为了探索(4)的问题，根据官网的文档，目前在用TVM的Autotune做一个自动优化，现在只针对2D_Conv这个Op,过程非常慢，目前还没搞定
  
 调查慢的原因：
 AutoTVM模块通过搜索的方式获得具体硬件下的最优调度配置，总体步骤如：
@@ -77,8 +76,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MDI5MzcxOCwtMTY4NDA3Nzk0OCwtMT
-AxNDkxNDQ4MCwtNTc1MjIyNDQ2LDUwODE1ODE5MiwxOTkxMjg4
-MzgsLTE1NjE5ODAyODIsLTMzMzkwNjgyNywtMjc1NjI3NDQ5LD
-k2MTMyNjEyMV19
+eyJoaXN0b3J5IjpbNDQwNDg3NDEwLC0xNjg0MDc3OTQ4LC0xMD
+E0OTE0NDgwLC01NzUyMjI0NDYsNTA4MTU4MTkyLDE5OTEyODgz
+OCwtMTU2MTk4MDI4MiwtMzMzOTA2ODI3LC0yNzU2Mjc0NDksOT
+YxMzI2MTIxXX0=
 -->
