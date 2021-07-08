@@ -1,5 +1,19 @@
 # Get start with TVM-1
-# 2021.
+# 2021.7.1-7.6
+官方：https://tvm.apache.org/docs/api/python/index.html
+   (1):安装TVM开发环境，从官网和其他blog了解了TVM的编译以及优化的过程，以及优化的主要节点主要在哪部分做 
+
+   (2):结合官方的文档，实现了MobileNetv2(pytorch)在CPU上的编译，从单张图片的时间推理来看，MobileNetv2直接在cpu上的推理时间约为17ms;而经过TVM编译后的MobileNetv2(转换成ONNX后编译的)在CPU上的同一张图片的推理时间为15ms,这里使用的是TVM的ContextPass的三级优化(共六级)，说明TVM在CPU上可以实现模型加速。
+
+   (3):改变模型推理的平台，在GPU上重复上述过程，区别是直接用TVM编译pytorch模型，不转换成ONNX，时间上TVM编译后的推理时间比直接在GPU上的推理时间长(0.02s-0.3s)，后面发现CPU和GPU的两个编译函数不一样，relay.build_module.create_executor()和relay.build()的区别，需要看一下这两者的区别。还有一个可能的原因是，我测试的是一张图片的推理时间，可能会存在一开始会有震荡，测多次取平均值可能更能说明问题。
+
+   (4):针对这个问题，查找了一些资料，一个较大的可能是没有针对GPU做任何优化，导致直接编译后的模型推理效率很低，GitHub上发现别人做的实验直接部署到Jetson Nano从CPU到GPU的时间变化为160ms-->1.8s.(https://mp.weixin.qq.com/s/7Wvv4VOPdj6N_CEg8bJFXw)
+
+7.3-7.6:
+
+   为了探索(4)的问题，根据官网的文档，目前在用TVM的Autotune做一个自动优化，现在只针对2D_Conv这个Op,过程非常慢，目前还没搞定
+
+
 # 2021.7.7
 ## model without tuning
 跟着这里的教程跑了一遍：https://github.com/leoluopy/autotvm_tutorial
@@ -99,6 +113,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczMzEyODkzLC0zMzM5MDY4MjcsLTI3NT
-YyNzQ0OSw5NjEzMjYxMjFdfQ==
+eyJoaXN0b3J5IjpbLTIwNDg0OTcyNzksLTMzMzkwNjgyNywtMj
+c1NjI3NDQ5LDk2MTMyNjEyMV19
 -->
