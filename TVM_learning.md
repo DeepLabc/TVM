@@ -27,7 +27,11 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 |--|--|
 |  |  |
 
-
+|   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
 
 
 优化VS不优化：Gain = 14.99ms - 6.16ms = 8.83ms
@@ -97,6 +101,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI0NDU0NDIzLC0zMzM5MDY4MjcsLTI3NT
+eyJoaXN0b3J5IjpbNzk0MTkyODEyLC0zMzM5MDY4MjcsLTI3NT
 YyNzQ0OSw5NjEzMjYxMjFdfQ==
 -->
