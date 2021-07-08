@@ -13,6 +13,19 @@
 7.3-7.6:
 
    为了探索(4)的问题，根据官网的文档，目前在用TVM的Autotune做一个自动优化，现在只针对2D_Conv这个Op,过程非常慢，目前还没搞定
+ 
+慢的原因：
+AutoTVM模块通过搜索的方式获得具体硬件下的最优调度配置，总体步骤如：
+
+-   针对每个Relay子函数，定义一系列调度原语（Schedule primitives），通过调度原语的组合实现计算结果等价的Relay子函数
+-   在海量的配置组合中为每个Relay子函数搜索最优的调度配置
+
+对于卷积这样的计算密集算子，调度配置的搜索空间通常有几十亿种选择，比较棘手的问题就是如何高效的在搜索空间中获得最优/局部最优解。常见的做法有两种：
+
+-   遍历所有可能的参数编译模型并评估
+-   评估部分参数模型，训练一个性能评估函数，用于指导搜索过程寻找更好的调度配置
+
+由于搜索空间过于巨大，第一种方法需要花费的时间难以估量；AutoTVM采用的是第二种，用一个XGBoost模型（其他回归预测模型也可）作为评估调度配置性能的模型（CostModel），用以指导模拟退火算法（默认）寻找最优调度配置。
 
 
 # 2021.7.7
@@ -63,7 +76,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4MTU4MTkyLDE5OTEyODgzOCwtMTU2MT
-k4MDI4MiwtMzMzOTA2ODI3LC0yNzU2Mjc0NDksOTYxMzI2MTIx
-XX0=
+eyJoaXN0b3J5IjpbLTU3NTIyMjQ0Niw1MDgxNTgxOTIsMTk5MT
+I4ODM4LC0xNTYxOTgwMjgyLC0zMzM5MDY4MjcsLTI3NTYyNzQ0
+OSw5NjEzMjYxMjFdfQ==
 -->
