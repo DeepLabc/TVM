@@ -24,14 +24,11 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 然后进行重新编译，依然使用PassContext()的三级优化来编译，TVM编译调优的pytorch模型后，推理测试600张的图片的平均时间：6.16ms (std: 0.30 ms)
 
 |method| mean time(ms) | gain |
-| |--| -- |
-|  |  |  |
-
+| -- |--| -- |
+| pytorch+GPU |  |  |
+|   |   |   |
 |   |   |   |   |   
-|---|---|---|---|
-|   |   |   |   |   
-|   |   |   |   |   
-|   |   |   |   |   
+  
 
 
 优化VS不优化：Gain = 14.99ms - 6.16ms = 8.83ms
@@ -101,6 +98,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTM4NTMzMDQsLTMzMzkwNjgyNywtMj
+eyJoaXN0b3J5IjpbLTE4MDcyMjY0OTQsLTMzMzkwNjgyNywtMj
 c1NjI3NDQ5LDk2MTMyNjEyMV19
 -->
