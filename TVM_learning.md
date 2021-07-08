@@ -25,8 +25,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 |method| mean time(ms) | gain |
 | -- |--| -- |
-| pytorch+GPU |  |  |
-|   |   |   |
+| pytorch+GPU | 12.60 |  |
+| TVM  |  14.99 |   |
 |   |   |   |   |   
   
 
@@ -98,6 +98,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDcyMjY0OTQsLTMzMzkwNjgyNywtMj
-c1NjI3NDQ5LDk2MTMyNjEyMV19
+eyJoaXN0b3J5IjpbMTE5NzI1MDIwMSwtMzMzOTA2ODI3LC0yNz
+U2Mjc0NDksOTYxMzI2MTIxXX0=
 -->
