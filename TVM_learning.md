@@ -1,4 +1,4 @@
-# Get start with TVM-1
+# Get start with TVM
 # 2021.7.1-7.6
 官方：https://tvm.apache.org/docs/api/python/index.html
    (1):安装TVM开发环境，从官网和其他blog了解了TVM的编译以及优化的过程，以及优化的主要节点主要在哪部分做 
@@ -61,6 +61,6 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3OTA3NDgyOCwtMzMzOTA2ODI3LC0yNz
+eyJoaXN0b3J5IjpbMTc4NjQzNzIwMCwtMzMzOTA2ODI3LC0yNz
 U2Mjc0NDksOTYxMzI2MTIxXX0=
 -->
