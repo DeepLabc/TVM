@@ -32,6 +32,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 - 两次的实验MobileNetv2、CenterFace(上周GitHub的blog也说明了这个问题)验证了不经过优化的模型直接用TVM编译并没有加速的效果，反而时间变长了，因此在后期的模型优化过程，需要自动调优或者手动调优才能实现加速。
 
 # 2021.7.8
+## TVM int8 quantize
+接口：sym  =  relay.quantize.quantize(mod, params)
 
 
 
@@ -86,5 +88,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NTYyNzQ0OSw5NjEzMjYxMjFdfQ==
+eyJoaXN0b3J5IjpbNTg1NDY1NzE2LC0yNzU2Mjc0NDksOTYxMz
+I2MTIxXX0=
 -->
