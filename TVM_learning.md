@@ -1,6 +1,7 @@
 # Get start with TVM
 # 2021.7.1-7.6
 官方：https://tvm.apache.org/docs/api/python/index.html
+
    (1):安装TVM开发环境，从官网和其他blog了解了TVM的编译以及优化的过程，以及优化的主要节点主要在哪部分做 。![enter image description here](https://raw.githubusercontent.com/tlc-pack/web-data/main/images/design/tvm_dyn_workflow.svg)
 
 
@@ -76,8 +77,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODQwNzc5NDgsLTEwMTQ5MTQ0ODAsLT
-U3NTIyMjQ0Niw1MDgxNTgxOTIsMTk5MTI4ODM4LC0xNTYxOTgw
-MjgyLC0zMzM5MDY4MjcsLTI3NTYyNzQ0OSw5NjEzMjYxMjFdfQ
-==
+eyJoaXN0b3J5IjpbMTg1MDI5MzcxOCwtMTY4NDA3Nzk0OCwtMT
+AxNDkxNDQ4MCwtNTc1MjIyNDQ2LDUwODE1ODE5MiwxOTkxMjg4
+MzgsLTE1NjE5ODAyODIsLTMzMzkwNjgyNywtMjc1NjI3NDQ5LD
+k2MTMyNjEyMV19
 -->
