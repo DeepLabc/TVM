@@ -16,7 +16,7 @@
 
 # 2021.7.7
 ## model without tuning
-跟着这里的教程跑了一遍：https://github.com/leoluopy/autotvm_tutorial
+https://github.com/leoluopy/autotvm_tutorial
 
 在运行代码的时候，突然报错：
 CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. 
@@ -61,6 +61,6 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NjQzNzIwMCwtMzMzOTA2ODI3LC0yNz
-U2Mjc0NDksOTYxMzI2MTIxXX0=
+eyJoaXN0b3J5IjpbLTE1NjE5ODAyODIsLTMzMzkwNjgyNywtMj
+c1NjI3NDQ5LDk2MTMyNjEyMV19
 -->
