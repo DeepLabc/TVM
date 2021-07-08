@@ -33,7 +33,8 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 # 2021.7.8
 ## TVM int8 quantize
-接口：sym  =  relay.quantize.quantize(mod, params)
+模型：
+接口：mod  =  relay.quantize.quantize(mod, params)
 最新的0.8版本官方文档没有找到这个接口......但是依然可以用......
 
 
@@ -89,6 +90,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcyMTk5NDE2LC0yNzU2Mjc0NDksOTYxMz
-I2MTIxXX0=
+eyJoaXN0b3J5IjpbLTMzMzkwNjgyNywtMjc1NjI3NDQ5LDk2MT
+MyNjEyMV19
 -->
