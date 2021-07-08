@@ -1,7 +1,8 @@
 # Get start with TVM
 # 2021.7.1-7.6
 官方：https://tvm.apache.org/docs/api/python/index.html
-   (1):安装TVM开发环境，从官网和其他blog了解了TVM的编译以及优化的过程，以及优化的主要节点主要在哪部分做 
+   (1):安装TVM开发环境，从官网和其他blog了解了TVM的编译以及优化的过程，以及优化的主要节点主要在哪部分做 。![enter image description here](https://raw.githubusercontent.com/tlc-pack/web-data/main/images/design/tvm_dyn_workflow.svg)
+
 
    (2):结合官方的文档，实现了MobileNetv2(pytorch)在CPU上的编译，从单张图片的时间推理来看，MobileNetv2直接在cpu上的推理时间约为17ms;而经过TVM编译后的MobileNetv2(转换成ONNX后编译的)在CPU上的同一张图片的推理时间为15ms,这里使用的是TVM的ContextPass的三级优化(共六级)，说明TVM在CPU上可以实现模型加速。
 
@@ -62,6 +63,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTI4ODM4LC0xNTYxOTgwMjgyLC0zMz
-M5MDY4MjcsLTI3NTYyNzQ0OSw5NjEzMjYxMjFdfQ==
+eyJoaXN0b3J5IjpbNTA4MTU4MTkyLDE5OTEyODgzOCwtMTU2MT
+k4MDI4MiwtMzMzOTA2ODI3LC0yNzU2Mjc0NDksOTYxMzI2MTIx
+XX0=
 -->
