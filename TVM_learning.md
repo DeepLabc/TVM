@@ -75,15 +75,16 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 考虑用pytorh 的量化包来实现，官方文档说目前还不支持用cuda做训练后静态量化，所以思路：pytorch model---->cpu quantization ------->TVM + gpu  ------->autoTVM
 安装依赖：https://github.com/pytorch/FBGEMM ，支持低精度量化的运算
 坑：
+pytorch量化支持两种硬件架构x86(fbgemm)、ARM(qq)
 pytorch static quantization:不支持反卷积的量化, 不支持add等操作
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODEwMDc1MTA5LDExNzAyOTg2NzQsNDU0Mj
-E1MzYzLC0xNDEzODA0Mzk0LDQ0MDQ4NzQxMCwtMTY4NDA3Nzk0
-OCwtMTAxNDkxNDQ4MCwtNTc1MjIyNDQ2LDUwODE1ODE5MiwxOT
-kxMjg4MzgsLTE1NjE5ODAyODIsLTMzMzkwNjgyNywtMjc1NjI3
-NDQ5LDk2MTMyNjEyMV19
+eyJoaXN0b3J5IjpbOTM0NDI2NDA3LDgxMDA3NTEwOSwxMTcwMj
+k4Njc0LDQ1NDIxNTM2MywtMTQxMzgwNDM5NCw0NDA0ODc0MTAs
+LTE2ODQwNzc5NDgsLTEwMTQ5MTQ0ODAsLTU3NTIyMjQ0Niw1MD
+gxNTgxOTIsMTk5MTI4ODM4LC0xNTYxOTgwMjgyLC0zMzM5MDY4
+MjcsLTI3NTYyNzQ0OSw5NjEzMjYxMjFdfQ==
 -->
