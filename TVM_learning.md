@@ -76,14 +76,15 @@ TVM接口：mod  =  relay.quantize.quantize(mod, params)最新的0.8版本官方
 坑：
 - pytorch量化支持两种硬件架构x86(fbgemm)、ARM(qnnpack)
 - pytorch static quantization:不支持反卷积的量化, 不支持add等操作
-- pytorch Dynamic quantization 可以对权重进行量化，但是量化后的模型不支持放到GPU上，
+- pytorch Dynamic quantization 可以对权重进行量化，但是量化后的模型不支持放到GPU上(根据错误自己的判断)，
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MzM3MTI4OCw4MTAwNzUxMDksMTE3MD
-I5ODY3NCw0NTQyMTUzNjMsLTE0MTM4MDQzOTQsNDQwNDg3NDEw
-LC0xNjg0MDc3OTQ4LC0xMDE0OTE0NDgwLC01NzUyMjI0NDYsNT
-A4MTU4MTkyLDE5OTEyODgzOCwtMTU2MTk4MDI4MiwtMzMzOTA2
-ODI3LC0yNzU2Mjc0NDksOTYxMzI2MTIxXX0=
+eyJoaXN0b3J5IjpbLTE0ODgzNDkwMjYsLTc2MzM3MTI4OCw4MT
+AwNzUxMDksMTE3MDI5ODY3NCw0NTQyMTUzNjMsLTE0MTM4MDQz
+OTQsNDQwNDg3NDEwLC0xNjg0MDc3OTQ4LC0xMDE0OTE0NDgwLC
+01NzUyMjI0NDYsNTA4MTU4MTkyLDE5OTEyODgzOCwtMTU2MTk4
+MDI4MiwtMzMzOTA2ODI3LC0yNzU2Mjc0NDksOTYxMzI2MTIxXX
+0=
 -->
