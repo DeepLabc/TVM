@@ -70,21 +70,20 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 # 2021.7.8
 ## TVM int8 quantize
 模型：
-接口：mod  =  relay.quantize.quantize(mod, params)
-最新的0.8版本官方文档没有找到这个接口....
+TVM接口：mod  =  relay.quantize.quantize(mod, params)最新的0.8版本官方文档没有找到这个接口....
 考虑用pytorh 的量化包来实现，官方文档说目前还不支持用cuda做训练后静态量化，所以思路：pytorch model---->cpu quantization ------->TVM + gpu  ------->autoTVM
 安装依赖：https://github.com/pytorch/FBGEMM ，支持低精度量化的运算
 坑：
-pytorch量化支持两种硬件架构x86(fbgemm)、ARM(qq)
+pytorch量化支持两种硬件架构x86(fbgemm)、ARM(qnnpack)
 pytorch static quantization:不支持反卷积的量化, 不支持add等操作
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM0NDI2NDA3LDgxMDA3NTEwOSwxMTcwMj
-k4Njc0LDQ1NDIxNTM2MywtMTQxMzgwNDM5NCw0NDA0ODc0MTAs
-LTE2ODQwNzc5NDgsLTEwMTQ5MTQ0ODAsLTU3NTIyMjQ0Niw1MD
-gxNTgxOTIsMTk5MTI4ODM4LC0xNTYxOTgwMjgyLC0zMzM5MDY4
-MjcsLTI3NTYyNzQ0OSw5NjEzMjYxMjFdfQ==
+eyJoaXN0b3J5IjpbLTUwNTk2NDU2Miw4MTAwNzUxMDksMTE3MD
+I5ODY3NCw0NTQyMTUzNjMsLTE0MTM4MDQzOTQsNDQwNDg3NDEw
+LC0xNjg0MDc3OTQ4LC0xMDE0OTE0NDgwLC01NzUyMjI0NDYsNT
+A4MTU4MTkyLDE5OTEyODgzOCwtMTU2MTk4MDI4MiwtMzMzOTA2
+ODI3LC0yNzU2Mjc0NDksOTYxMzI2MTIxXX0=
 -->
