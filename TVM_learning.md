@@ -72,7 +72,7 @@ CUDA initialization: CUDA unknown error - this may be due to an incorrectly set 
 模型：
 TVM接口：mod  =  relay.quantize.quantize(mod, params)最新的0.8版本官方文档没有找到这个接口....
 考虑用pytorh 的量化包来实现，官方文档说目前还不支持用cuda做训练后静态量化，所以思路：pytorch model---->cpu quantization ------->TVM + gpu  ------->autoTVM
-安装依赖：https://github.com/pytorch/FBGEMM ，支持低精度量化的运算
+安装依赖：https://github.com/pytorch/FBGEMM ，支持CPU低精度量化的运算
 
     # static
     backend = "fbgemm"  
@@ -83,22 +83,21 @@ TVM接口：mod  =  relay.quantize.quantize(mod, params)最新的0.8版本官方
     fp32 = torch.randn(1, 3, 224, 224)  
     model_fp32_prepared(fp32)  
     model_int8 = torch.quantization.convert(model_fp32_prepared, inplace=True)
-
-    model_int8 = torch.quantization.quantize_dynamic(model,{torch.nn.Conv2d, torch.nn.Linear},  
-dtype=torch.qint8  
-)
+    # dynamic 
+    model_int8 = torch.quantization.quantize_dynamic(model,{torch.nn.Conv2d, torch.nn.Linear}, dtype=torch.qint8)
 
 坑：
 - pytorch量化支持两种硬件架构x86(fbgemm)、ARM(qnnpack)
 - pytorch static quantization:不支持反卷积的量化, 不支持add等操作
-- pytorch Dynamic quantization 可以对权重进行量化，但是量化后的模型不支持放到GPU上(根据错误自己的判断)，
+- pytorch Dynamic quantization 可以对权重进行量化，但是量化后的模型不支持放到GPU上(根据错误自己的判断)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NjIxNzM3LC03NjMzNzEyODgsODEwMD
-c1MTA5LDExNzAyOTg2NzQsNDU0MjE1MzYzLC0xNDEzODA0Mzk0
-LDQ0MDQ4NzQxMCwtMTY4NDA3Nzk0OCwtMTAxNDkxNDQ4MCwtNT
-c1MjIyNDQ2LDUwODE1ODE5MiwxOTkxMjg4MzgsLTE1NjE5ODAy
-ODIsLTMzMzkwNjgyNywtMjc1NjI3NDQ5LDk2MTMyNjEyMV19
+eyJoaXN0b3J5IjpbLTE4NDcyMjU0MTksLTc2MzM3MTI4OCw4MT
+AwNzUxMDksMTE3MDI5ODY3NCw0NTQyMTUzNjMsLTE0MTM4MDQz
+OTQsNDQwNDg3NDEwLC0xNjg0MDc3OTQ4LC0xMDE0OTE0NDgwLC
+01NzUyMjI0NDYsNTA4MTU4MTkyLDE5OTEyODgzOCwtMTU2MTk4
+MDI4MiwtMzMzOTA2ODI3LC0yNzU2Mjc0NDksOTYxMzI2MTIxXX
+0=
 -->
