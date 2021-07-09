@@ -91,13 +91,12 @@ TVM接口：mod  =  relay.quantize.quantize(mod, params)最新的0.8版本官方
 - pytorch static quantization:不支持反卷积的量化, 不支持add等操作
 - pytorch Dynamic quantization 可以对权重进行量化，但是量化后的模型不支持放到GPU上(根据错误自己的判断)
 
-
+## 训练过程中量化
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDcyMjU0MTksLTc2MzM3MTI4OCw4MT
-AwNzUxMDksMTE3MDI5ODY3NCw0NTQyMTUzNjMsLTE0MTM4MDQz
-OTQsNDQwNDg3NDEwLC0xNjg0MDc3OTQ4LC0xMDE0OTE0NDgwLC
-01NzUyMjI0NDYsNTA4MTU4MTkyLDE5OTEyODgzOCwtMTU2MTk4
-MDI4MiwtMzMzOTA2ODI3LC0yNzU2Mjc0NDksOTYxMzI2MTIxXX
-0=
+eyJoaXN0b3J5IjpbLTM0MDQ4OTAxLC03NjMzNzEyODgsODEwMD
+c1MTA5LDExNzAyOTg2NzQsNDU0MjE1MzYzLC0xNDEzODA0Mzk0
+LDQ0MDQ4NzQxMCwtMTY4NDA3Nzk0OCwtMTAxNDkxNDQ4MCwtNT
+c1MjIyNDQ2LDUwODE1ODE5MiwxOTkxMjg4MzgsLTE1NjE5ODAy
+ODIsLTMzMzkwNjgyNywtMjc1NjI3NDQ5LDk2MTMyNjEyMV19
 -->
